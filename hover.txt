@@ -1,0 +1,65 @@
+!DOCTYPE html>
+<html>
+<title>My Program</title>
+<head>
+    <style>
+        input,select, textarea,button {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid#ccc;
+            border-radius: 5px;
+            width: 100%
+            box-sizing: border-box;
+        }
+        td:hover{
+            background-image: url("india2.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        input:focus, textarea:focus, select:focus {
+            border-color: #007bff
+        }
+        
+        button:hover {
+            color:blue
+            
+        }
+    </style>
+</head>
+
+<body>
+<h1><b>Demonstrating Form Methods</b></h1><br>
+<p><small>This page shows two forms side by side to illustrate the difference between the GET and POST methods. After you submit each form, observe the URL in your browser's address bar.</small></p>
+
+<table border="2">
+ <tr>
+  <td>
+  <form action="submit form.php" method="get">
+   <h1> GET Method Form</h1><br>
+   <p>This method sends data in the URL as a query string. It is visible and suitable for non-senstive data</p><br>
+   <p>Name:</p>
+   <input type="text"><br><br>
+   <input type="submit" value="Submit via GET">
+
+  </form>
+  </td>
+  
+  <td>
+  <form action="submit form.php" method="post">
+   <h1> POST Method Form</h1><br>
+   <p>This method sends data in the URL as a query string. It is visible and suitable for non-senstive data</p><br>
+   <p>Name:</p>
+   <input type="text" ><br><br>
+   <input type="submit" value="Submit via POST">
+  </form> 
+  </td>
+ </tr>
+</table>
+
+<p>Forms created for educational purposes</p>
+
+	
+</body>
+</html>
